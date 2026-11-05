@@ -4,7 +4,7 @@ response = {
         "total": 3,
         "users": [
             {"id": 1, "name": "Anna",  "email": "anna@test.com",  "roles": ["user"]},
-            {"id": 2, "name": "Bor", "email": "boris@test.com", "roles": ["user", "admin"]},
+            {"id": 2, "name": "Boris", "email": "boris@test.com", "roles": ["user", "admin"]},
             {"id": 3, "name": "Clara", "email": "clara@test.com", "roles": ["user"]},
         ],
     },
@@ -21,7 +21,6 @@ for user in users:
 
 assert "password" not in users[0] 
    
-
 
 
 print("Все проверки пройдены")
