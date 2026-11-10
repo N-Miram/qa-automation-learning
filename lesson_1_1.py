@@ -10,6 +10,9 @@ response = {
     },
 }
 users= response["body"]["users"]
+
+for user in users:
+    assert user["id"] > 0, f"ID должен быть > 0, получили {user['id']} у {user['name']}"
 assert response["status_code"] == 200
 assert response["body"]["total"] == len(response["body"]["users"])
 assert response["body"]["users"][1]["name"] == "Boris"
@@ -20,7 +23,7 @@ for user in users:
     assert "@" in user["email"] , f"Нет @ в email у пользователя {user['name']}"
 
 assert "password" not in users[0] 
-   
+
 
 
 print("Все проверки пройдены")

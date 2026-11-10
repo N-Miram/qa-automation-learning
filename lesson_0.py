@@ -1,5 +1,5 @@
 def is_valid_status(code):
-    return code >= 200 and code <= 299
+    return 200 <= code <= 299
    
 
 
