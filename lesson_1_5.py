@@ -11,7 +11,7 @@ def check_status(response, expected=200):
         actual = response["status_code"]
     except KeyError:
         raise AssertionError("в ответе нет поля status_code")
-    assert actual == expected , f"expected == {expected} , actual {actual}"
+    assert actual == expected, f"expected == {expected}, actual {actual}"
 
 
 resp = {"time_ms": 350}
