@@ -15,6 +15,6 @@ def check_status(response, expected=200):
 
 
 resp = {"time_ms": 350}
-    
-check_time(resp)
-check_status(resp)
+if __name__ == "__main__":
+    check_time(resp)
+    check_status(resp)
