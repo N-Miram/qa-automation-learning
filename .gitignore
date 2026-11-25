@@ -1,15 +1,15 @@
-   # Python
-   __pycache__/
-   venv/
-   .venv/
+# Python
+__pycache__/
+venv/
+.venv/
 
-   # Secrets
-   .env
+# Secrets
+.env
 
-   # Test reports
-   allure-results/
-   allure-report/
+# Test reports
+allure-results/
+allure-report/
 
-   # IDE
-   .vscode/
-   .idea/
+# IDE
+.vscode/
+.idea/
